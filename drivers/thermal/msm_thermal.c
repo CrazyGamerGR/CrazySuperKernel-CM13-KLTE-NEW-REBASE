@@ -3376,6 +3376,8 @@ fail:
 		pr_err("Failed reading node=%s, key=%s. err:%d\n",
 			node->full_name, key, ret);
 
+	pr_info("%s: msm_thermal_dev_probe failed!\n", KBUILD_MODNAME);
+
 	return ret;
 }
 
