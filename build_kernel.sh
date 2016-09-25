@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export ARCH=arm
-export CROSS_COMPILE=/home/francesco/arm-eabi-4.9/bin/arm-eabi-
+export CROSS_COMPILE=/home/francesco/arm-eabi-4.9-linaro/bin/arm-eabi-
 mkdir output
 
 make -C $(pwd) O=output 0crazykernel1_CM_defconfig VARIANT_DEFCONFIG=msm8974pro_sec_klte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
